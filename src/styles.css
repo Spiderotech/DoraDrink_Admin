@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-ink text-slate-100 antialiased;
+    margin: 0;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-panel p-4 shadow-[0_10px_30px_rgba(0,0,0,0.18)];
+  }
+
+  .btn {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-xl border border-line bg-panel3 px-3 py-2 text-sm font-black text-slate-100 transition hover:bg-slate-800;
+  }
+
+  .btn-primary {
+    @apply border-brand bg-gradient-to-br from-blue-600 to-violet text-white;
+  }
+
+  .btn-danger {
+    @apply border-danger/50 bg-danger/10 text-red-100;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent;
+  }
+
+  .input {
+    @apply min-h-11 w-full rounded-xl border border-line bg-[#090f1c] px-3 py-2 text-sm text-slate-100 outline-none focus:border-brand focus:ring-4 focus:ring-brand/15;
+  }
+
+  .label {
+    @apply text-xs font-black uppercase tracking-normal text-muted;
+  }
+
+  .pill {
+    @apply inline-flex rounded-full border border-line px-2.5 py-1 text-xs font-black;
+  }
+
+  .pill-good {
+    @apply border-success/40 bg-success/10 text-emerald-200;
+  }
+
+  .pill-warn {
+    @apply border-warning/40 bg-warning/10 text-yellow-100;
+  }
+
+  .pill-bad {
+    @apply border-danger/50 bg-danger/10 text-red-100;
+  }
+
+  .pill-info {
+    @apply border-brand/40 bg-brand/10 text-sky-100;
+  }
+
+  .table-cell {
+    @apply border-b border-line px-3 py-3 text-left text-sm text-slate-200;
+  }
+
+  .table-head {
+    @apply border-b border-line px-3 py-3 text-left text-xs font-black uppercase text-muted;
+  }
+}
