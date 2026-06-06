@@ -26,7 +26,7 @@ function mapUser(user) {
   return {
     id: String(user._id),
     username: user.username || '-',
-    email: user.firebaseUid || user.guestId || '-',
+    email: user.email || '-',
     country: user.country || '-',
     city: user.city || '-',
     coins: user.wallet?.coins ?? 0,
@@ -102,7 +102,7 @@ export default function UsersScreen({ session, openModal }) {
       <div className="card">
         {error ? <div className="mb-4 rounded-2xl border border-danger/40 bg-danger/10 p-3 text-sm text-red-100">{error}</div> : null}
         <div className="mb-4 flex flex-wrap gap-3">
-          <input className="input max-w-sm" placeholder="Search username, email, city" value={search} onChange={event => setSearch(event.target.value)} />
+          <input className="input max-w-sm" placeholder="Search username, email, ID" value={search} onChange={event => setSearch(event.target.value)} />
           <select className="input max-w-44" value={status} onChange={event => setStatus(event.target.value)}>
             {['all', 'active', 'disabled'].map(value => <option key={value} value={value}>{value}</option>)}
           </select>
