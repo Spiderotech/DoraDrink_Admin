@@ -38,7 +38,7 @@ export const alerts = [
 ];
 
 export const users = [
-  { id: 'u_1024', username: 'Arjun P', email: 'arjun@example.com', country: 'India', city: 'Kochi', coins: 1240, diamonds: 3, energy: 'High', streak: 18, lastActive: '12 min ago', status: 'active' },
+  { id: 'u_1024', username: 'Username P', email: 'Username@example.com', country: 'India', city: 'Kochi', coins: 1240, diamonds: 3, energy: 'High', streak: 18, lastActive: '12 min ago', status: 'active' },
   { id: 'u_1025', username: 'Maya R', email: 'maya@example.com', country: 'India', city: 'Bengaluru', coins: 9400, diamonds: 8, energy: 'Medium', streak: 52, lastActive: '1 hr ago', status: 'suspicious' },
   { id: 'u_1026', username: 'Noah L', email: 'noah@example.com', country: 'USA', city: 'Austin', coins: 410, diamonds: 1, energy: 'Low', streak: 4, lastActive: '2 days ago', status: 'inactive' },
   { id: 'u_1027', username: 'Sara K', email: 'sara@example.com', country: 'UAE', city: 'Dubai', coins: 2210, diamonds: 4, energy: 'High', streak: 31, lastActive: '22 min ago', status: 'active' },

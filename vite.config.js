@@ -4,6 +4,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['.up.railway.app'],
+    allowedHosts: ['.up.railway.app', 'admin.doradrink.com'],
   },
 });
